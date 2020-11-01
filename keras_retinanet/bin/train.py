@@ -463,7 +463,9 @@ def main(args=None):
     # parse arguments
     if args is None:
         args = sys.argv[1:]
+    print("args:",args)    
     args = parse_args(args)
+    print("args:",args) 
 
     # create object that stores backbone information
     backbone = models.backbone(args.backbone)
